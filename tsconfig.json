@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Grundläggande inställningar */
+    "target": "es2016", // Ange ECMAScript-målversionen: 'ES3', 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', eller 'ESNEXT'.
+    "module": "commonjs", // Ange modulsystemet: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', eller 'ESNext'.
+    "outDir": "./dist", // Dirigera utdatakatalogen.
+    "rootDir": "./", // Ange källfilens rotkatalog.
+    "strict": true, // Aktivera alla strikta typkontrollalternativ.
+    "esModuleInterop": true, // Tillåter import av CommonJS-moduler som ES-moduler.
+    "forceConsistentCasingInFileNames": true, // Säkerställ att höljet för filnamn matchar höljet på disk.
+
+    /* Ytterligare alternativ */
+    "sourceMap": true, // Generera källkartfiler för felsökning.
+    "declaration": true // Generera deklarationsfiler (.d.ts).
+  },
+  "include": [
+    "./*.ts", // Inkludera alla TypeScript-filer i den aktuella katalogen.
+    "./**/*.ts" // Inkludera alla TypeScript-filer i underkataloger.
+  ],
+  "exclude": [
+    "node_modules" // Exkludera node_modules-katalogen.
+  ]
+}
